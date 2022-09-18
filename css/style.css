@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 90vw;
+  height: 80vh;
+  margin: 10vh 5vw;
+  justify-content: space-between;
+  border-radius: 16px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.32);
+}
+.card-img {
+  width: 100%;
+  height: 45%;
+  border-radius: 14px 14px 0px 0px;
+}
+.card-info {
+  height: 55%;
+  width: 80%;
+  margin: 5% 10%;
+  justify-content: space-between;
+}
+
+.card-info h4 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  opacity: 0.7;
+  height: 10%;
+}
+.card-info h1 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: hsl(212, 21%, 14%);
+}
+.card-info p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.9;
+  text-align: left;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.price-now {
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+  margin-right: 20px;
+}
+.price-before {
+  text-decoration: line-through;
+  opacity: 0.8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.btn {
+    height: 45px;
+  width: 80%;
+  margin: 0 10%;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+}
+.btn i{
+    padding: 0 8px;
+}
+.btn:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:1200px){
+  .card{
+    flex-direction: row;
+    width: 50vw;
+    height: 60vh;
+    margin: 20vh 25vw;
+  
+  }
+  .card-img{
+    height: 100%;
+    width: 50%;
+    border-radius: 14px 0px 0px 14px;
+
+  }
+  .card-info{
+    height: 80%;
+    width: 40%;
+    margin: 10% 5%;
+  }
+  .card-info h1{
+    font-size: 35px;
+  }
+}
